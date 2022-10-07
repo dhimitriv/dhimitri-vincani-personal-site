@@ -10,7 +10,6 @@ headerEl.addEventListener("click", function () {
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    // e.preventDefault();
     const href = link.getAttribute("href");
     if (href === "#")
       window.scrollTo({
@@ -19,6 +18,7 @@ allLinks.forEach(function (link) {
       });
 
     if (href !== "#" && href.startsWith("#")) {
+      e.preventDefault();
       const sectEl = document.querySelector(href);
       sectEl.scrollIntoView({ behavior: "smooth" });
     }
