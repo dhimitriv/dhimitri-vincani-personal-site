@@ -1,0 +1,152 @@
+@media (max-width: 48em) {
+  .dfg {
+    font-size: 1rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .img {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+    /* margin: auto; */
+  }
+
+  .nav-open .btn-mobile-nav {
+    margin: 0.1rem 0;
+
+    /* display: block; */
+  }
+
+  .nav-open .main-nav-link:link,
+  .nav-open .main-nav-link:visited {
+    /* display: none; */
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* color: #333; */
+    color: rgba(255, 255, 255, 0.877);
+    transition: all 0.3s;
+    /* display: block; */
+  }
+
+  .nav-open .main-nav-link:hover,
+  .nav-open .main-nav-link:active {
+    /* display: none; */
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(36, 119, 11);
+    transition: all 0.3s;
+    /* display: block; */
+  }
+
+  /* .main-nav-list {
+    margin-top: 3rem;
+  } */
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 202, 63, 0.932);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    /* display: block; */
+  }
+
+  .nav-open .main-nav {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .main-nav-link {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .certificates {
+    display: grid;
+  }
+}
+
+@media (max-width: 44em) {
+  /* body {
+    width: 90%;
+  } */
+  .certificates {
+    display: grid;
+  }
+
+  .img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .header {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .dfg {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1rem;
+  }
+
+  .footer-link:hover,
+  .footer-link:active {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .img-certificates {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 18.5em) {
+  .link {
+    font-size: 1.2rem;
+  }
+}
