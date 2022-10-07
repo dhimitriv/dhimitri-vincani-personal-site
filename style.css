@@ -19,10 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* .container {
-  position: relative;
-} */
-
 .header {
   font-size: 2.5rem;
   margin: 2rem;
@@ -33,7 +29,6 @@ body {
 .dfg {
   display: flex;
   justify-content: center;
-  /* margin: auto; */
   padding: 1.5rem;
   font-size: 1.1rem;
 }
@@ -55,7 +50,6 @@ body {
 }
 
 .img-header {
-  /* background-color: rgb(96, 202, 63); */
   padding: 0.2rem;
   padding-top: 4rem;
   margin-bottom: 5rem;
@@ -72,8 +66,6 @@ body {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  /* width: 50%; */
-  /* margin: auto; */
 }
 
 .img-certificates {
@@ -81,12 +73,7 @@ body {
   height: 15rem;
   border: rgba(95, 202, 63, 0.74) solid 1px;
   padding: 0.5rem;
-  /* margin: 1rem; */
 }
-
-/* .something {
-  position: relative;
-} */
 
 li {
   display: flex;
@@ -101,7 +88,6 @@ li {
   margin: 2rem auto;
   text-decoration: none;
   color: rgb(95, 202, 63);
-  /* padding: 2rem; */
 }
 
 .projects {
@@ -138,13 +124,6 @@ li {
   color: #111;
   display: block;
 }
-
-/* .link:link,
-.link:visited {
-  color: rgb(49, 128, 25);
-  display: block;
-  transition: all 0.5s;
-} */
 
 .link:hover,
 .link:active {
@@ -186,11 +165,9 @@ li {
   background: none;
   cursor: pointer;
   display: none;
-  /* justify-content: center; */
 }
 
 .icon-mobile-nav {
-  /* color: #333; */
   color: rgba(255, 255, 255, 0.877);
   height: 3.8rem;
   width: 3.8rem;
@@ -202,25 +179,20 @@ li {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  /* display: none; */
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem;
-  /* color: #333; */
   color: rgba(255, 255, 255, 0.877);
   transition: all 0.3s;
-  /* display: block; */
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  /* display: none; */
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem;
   color: rgb(36, 119, 11);
   transition: all 0.3s;
-  /* display: block; */
 }
 
 .icon-mobile-nav[name="close-outline"] {

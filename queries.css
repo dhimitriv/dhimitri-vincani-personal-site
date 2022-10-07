@@ -20,41 +20,29 @@
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
-    /* margin: auto; */
   }
 
   .nav-open .btn-mobile-nav {
     margin: 0.1rem 0;
-
-    /* display: block; */
   }
 
   .nav-open .main-nav-link:link,
   .nav-open .main-nav-link:visited {
-    /* display: none; */
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    /* color: #333; */
     color: rgba(255, 255, 255, 0.877);
     transition: all 0.3s;
-    /* display: block; */
   }
 
   .nav-open .main-nav-link:hover,
   .nav-open .main-nav-link:active {
-    /* display: none; */
     padding: 1rem;
     text-decoration: none;
     font-size: 1.5rem;
     color: rgb(36, 119, 11);
     transition: all 0.3s;
-    /* display: block; */
   }
-
-  /* .main-nav-list {
-    margin-top: 3rem;
-  } */
 
   .main-nav {
     display: flex;
@@ -71,11 +59,9 @@
     pointer-events: none;
     visibility: hidden;
     transform: translateX(100%);
-    /* display: block; */
   }
 
   .nav-open .main-nav {
-    /* display: block; */
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -100,9 +86,6 @@
 }
 
 @media (max-width: 44em) {
-  /* body {
-    width: 90%;
-  } */
   .certificates {
     display: grid;
   }

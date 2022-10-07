@@ -27,25 +27,3 @@ allLinks.forEach(function (link) {
       headerEl.classList.add("nav-open");
   });
 });
-
-// const sectionImg = document.querySelector(".img-header");
-
-// const observer = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
-
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   {
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-48px",
-//   }
-// );
-// observer.observe(sectionImg);
