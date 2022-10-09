@@ -3,7 +3,7 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".something");
 
-headerEl.addEventListener("click", function () {
+btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
@@ -24,6 +24,6 @@ allLinks.forEach(function (link) {
     }
 
     if (link.classList.contains("main-nav-link"))
-      headerEl.classList.add("nav-open");
+      headerEl.classList.toggle("nav-open");
   });
 });
