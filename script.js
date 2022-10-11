@@ -3,6 +3,10 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".something");
 
+if (window) {
+  headerEl.classList.remove("nav-open");
+}
+
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
