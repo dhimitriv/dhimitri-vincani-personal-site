@@ -1,7 +1,7 @@
 "use strict";
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".something");
+const headerEl = document.querySelector(".btn");
 
 if (window) {
   headerEl.classList.remove("nav-open");
