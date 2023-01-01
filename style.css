@@ -185,7 +185,7 @@ li {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.877);
   transition: all 0.3s;
-  /* display: none; */
+  display: none;
 }
 
 .main-nav-link:hover,
@@ -195,7 +195,7 @@ li {
   font-size: 1.5rem;
   color: rgb(36, 119, 11);
   transition: all 0.3s;
-  /* display: none; */
+  display: none;
 }
 
 .icon-mobile-nav[name="close-outline"] {
