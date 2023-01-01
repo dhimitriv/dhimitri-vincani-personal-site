@@ -2,16 +2,16 @@
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".btn");
+const allLinks = document.querySelectorAll("a:link");
 
-if (window) {
-  headerEl.classList.remove("nav-open");
-}
+// if (window) {
+//   headerEl.classList.remove("nav-open");
+// }
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
