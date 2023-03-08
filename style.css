@@ -15,8 +15,26 @@ html {
 
 body {
   background-color: #f7f7f7;
+  /* background-color: #000; */
   margin: auto;
   overflow-x: hidden;
+}
+
+.head-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-mobile-nav[name="moon-outline"] {
+  padding-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-mobile-nav[name="sunny-outline"] {
+  padding-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .header {
@@ -114,14 +132,14 @@ li {
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #767676;
+  color: #999999;
   transition: all 0.3s;
   display: block;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: #111;
+  color: rgb(49, 128, 25);
   display: block;
 }
 
@@ -199,6 +217,10 @@ li {
 }
 
 .icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.icon-mobile-nav[name="sunny-outline"] {
   display: none;
 }
 

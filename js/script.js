@@ -1,6 +1,10 @@
 "use strict";
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
+const btnNavAparence = document.querySelector(".aparence");
+const bodyEl = document.querySelector("body");
+const paragraphEl = document.querySelector("html");
+const linkEl = document.querySelector(".footer-link:link");
 const headerEl = document.querySelector(".btn");
 const allLinks = document.querySelectorAll("a:link");
 
@@ -10,6 +14,10 @@ const allLinks = document.querySelectorAll("a:link");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+});
+
+btnNavAparence.addEventListener("click", function () {
+  bodyEl.classList.toggle("openNav");
 });
 
 allLinks.forEach(function (link) {
