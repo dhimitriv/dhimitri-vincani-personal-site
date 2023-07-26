@@ -51,6 +51,16 @@ body {
   font-size: 1.1rem;
 }
 
+.dfg-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.icon-skill {
+  margin-top: 0.5rem;
+}
+
 .p2 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;

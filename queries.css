@@ -169,6 +169,18 @@
   }
 }
 
+@media (max-width: 35.5em) {
+  .dfg-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .icon-skill {
+    margin-top: 0.5rem;
+  }
+}
+
 @media (max-width: 25em) {
   .img-certificates {
     width: 90%;
