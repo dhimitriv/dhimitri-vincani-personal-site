@@ -4,201 +4,194 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="https://icons8.com/icons/set/fiverr" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-    <script defer src="js/script.js"></script>
     <title>Dhimitri Vincani</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="btn sticky">
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link" href="#section1">About me</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#section2">Projects</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#section3">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="head-btns">
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
-        <button class="btn-mobile-nav aparence">
-          <ion-icon class="icon-mobile-nav" name="moon-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="sunny-outline"></ion-icon>
-        </button>
+    <nav class="navbar">
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="navbar__menu">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/services.html" class="navbar__link">About me</a>
+        <a href="/memberships.html" class="navbar__link">Projects</a>
+        <a href="#email" class="navbar__link">Contact</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero__content">
+        <div class="img-content">
+          <h1 class="animate-hero">Dhimitri Vinçani</h1>
+          <img class="img" src="dhimo.jpg" />
+        </div>
+        <p class="animate-hero">
+          Hello everyone! <br /><br />My name is Dhimitraq Vinçani and I am a
+          self-taught Web Developer.
+        </p>
+        <!-- <a href="/" class="button">Zbulo më shumë!</a> -->
       </div>
     </div>
-    <div class="img-header">
-      <img class="img" src="dhimo.jpg" />
+    <div class="services">
+      <div class="services__container">
+        <div>
+          <p class="topline animate-services">Skills</p>
+          <!-- <h1 class="services__heading animate-services">Çfarë ofrojmë?</h1> -->
+          <div class="services__features">
+            <p class="services__feature animate-services">
+              <ion-icon
+                class="fas fa-check-circle"
+                name="logo-html5"
+              ></ion-icon>
+              HTML5
+            </p>
+            <p class="services__feature animate-services">
+              <ion-icon name="logo-css3" class="fas fa-check-circle"></ion-icon>
+              CSS3
+            </p>
+            <p class="services__feature animate-services">
+              <ion-icon
+                name="logo-javascript"
+                class="fas fa-check-circle"
+              ></ion-icon>
+              JavaScript
+            </p>
+            <p class="services__feature animate-services">
+              <ion-icon
+                name="phone-portrait-sharp"
+                class="fas fa-check-circle"
+              ></ion-icon>
+              Responsive design
+            </p>
+            <p class="services__feature animate-services">
+              <ion-icon
+                name="logo-github"
+                class="fas fa-check-circle"
+              ></ion-icon>
+              Git, Github
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="header" id="section1">Dhimitri Vincani</p>
-    <p class="dfg">Hello everyone!</p>
-    <p class="dfg">
-      My name is Dhimitraq Vincani and I am a self-taught Web Developer.
-    </p>
-    <p class="dfg p2">SKILLS:</p>
-    <p class="dfg dfg-skills">
-      <ion-icon class="icon-skill" name="logo-html5"></ion-icon> HTML5
-      <ion-icon class="icon-skill" name="logo-css3"></ion-icon> CSS3
-      <ion-icon class="icon-skill" name="logo-javascript"></ion-icon> JAVASCRIPT
-      <ion-icon class="icon-skill" name="phone-portrait-sharp"></ion-icon>
-      RESPONSIVE DESIGN
-      <ion-icon class="icon-skill" name="logo-github"></ion-icon>
-      GIT HUB, GIT
-    </p>
-    <p class="dfg p2" id="section2">PROJECTS:</p>
+    <div class="memberships">
+      <h1 class="animate-membership">Projects</h1>
+      <div class="membership__wrapper">
+        <div class="membership__card animate-card coffee">
+        <a
+          class="animate-membership link"
+          href="https://coffeeshop-abc.netlify.app/"
+          target="_blank"
+        >
+            <h2 class="animate-membership">Coffee shop project</h2>
+          </div>
+        </a>
+        <div class="membership__card animate-card quiz">
+        <a
+          class="animate-membership link"
+          href="https://quiz-game-dhimitri.netlify.app"
+          target="_blank"
+        >
+            <h2 class="animate-membership">The Football quiz</h2>
+          </div>
+        </a>
+        <div class="membership__card animate-card mobile">
+        <a
+          class="animate-membership link"
+          href="https://abc-mobile.netlify.app/"
+          target="_blank"
+        >
+            <h2 class="animate-membership">ABC Mobile Shop</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="email">
+      <div class="email__content">
+        <h1 class="animate-email">
+          Contact me!
+        </h1>
 
-    <div class="projects2">
-      <ul class="projects">
-        <li>
-          <a
-            class="link"
-            href="https://coffeeshop-abc.netlify.app/"
-            target="_blank"
-            >Cooffeeshop project</a
+        <div class="services__features">
+          <a class="services__feature animate-services"
+          href="https://www.linkedin.com/in/dhimitraq-vincani-210765251"
+          target="_blank"
           >
-        </li>
-        <li>
-          <a
-            class="link"
-            href="https://quiz-game-dhimitri.netlify.app"
-            target="_blank"
-            >Quiz game</a
+            <ion-icon
+            class="fas fa-check-circle"
+            name="logo-linkedin"
+            ></ion-icon>
+            Dhimitraq Vincani
+          </a>
+
+          <a class="services__feature animate-services"
+          href="https://dhimitraqvincani@gmail.com"
+          target="_blank"
           >
-        </li>
-        <li>
-          <a class="link" href="https://abc-mobile.netlify.app/" target="_blank"
-            >ABC Mobile Shop</a
+            <ion-icon
+            class="fas fa-check-circle"
+            name="mail-sharp"
+            ></ion-icon>
+            dhimitraqvincani@gmail.com
+          </a>
+          <a class="services__feature animate-services"
+          href="https://www.fiverr.com/dhimitriv?up_rollout=true"
+          target="_blank"
           >
-        </li>
-      </ul>
+            <ion-icon
+            class="fas fa-check-circle"
+            name="globe"
+            ></ion-icon>
+            Fiverr
+          </a>
+          <a class="services__feature animate-services"
+          href="https://upwork.com/freelancers/~015ad599ea7f9703cf"
+          target="_blank"
+          >
+            <ion-icon
+            class="fas fa-check-circle"
+            name="globe"
+            ></ion-icon>
+            Upwork
+          </a>
+          <a class="services__feature animate-services"
+          href="//instagram.com/dhimivi_coding/"
+          target="_blank"
+          >
+            <ion-icon
+            class="fas fa-check-circle"
+            name="logo-instagram"
+            ></ion-icon>
+            dhimivi_coding
+          </a>
+          <a class="services__feature animate-services"
+          href="https://github.com/dhimitriv"
+          target="_blank"
+          >
+            <ion-icon
+            class="fas fa-check-circle"
+            name="logo-github"
+            ></ion-icon>
+            dhimitriv
+          </a>
+          </div>
+      </div>
     </div>
-    <!-- <p class="dfg p2">CERTIFICATES:</p>
-    <div class="certificates">
-      <img class="img-certificates" src="cv photo2.jpg" />
-      <img class="img-certificates" src="cv photo1.jpg" />
-    </div> -->
-    <p class="dfg p2" id="section3">CONTACT ME:</p>
-    <ul class="social-links">
-      <li>
-        <a
-          class="footer-link"
-          href="https://www.linkedin.com/in/dhimitraq-vincani-210765251"
-          target="_blank"
-          ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
-        ></a>
-        <a
-          class="footer-link"
-          href="https://www.linkedin.com/in/dhimitraq-vincani-210765251"
-          target="_blank"
-          >Dhimitraq Vincani</a
-        >
-      </li>
-      <li>
-        <a
-          class="footer-link"
-          href="https://dhimitraqvincani@gmail.com"
-          target="_blank"
-          ><ion-icon class="social-icon" name="mail-sharp"></ion-icon>
-        </a>
-        <a
-          class="footer-link"
-          href="https://dhimitraqvincani@gmail.com"
-          target="_blank"
-          >dhimitraqvincani@gmail.com
-        </a>
-      </li>
-      <li>
-        <a
-          class="footer-link"
-          href="https://www.fiverr.com/dhimitriv?up_rollout=true"
-          target="_blank"
-          ><ion-icon class="social-icon" name="globe"></ion-icon>
-        </a>
-        <a
-          class="footer-link"
-          href="https://www.fiverr.com/dhimitriv?up_rollout=true"
-          target="_blank"
-          >Fiverr</a
-        >
-      </li>
-      <li>
-        <a
-          class="footer-link"
-          href="https://upwork.com/freelancers/~015ad599ea7f9703cf"
-          target="_blank"
-          ><ion-icon class="social-icon" name="globe"></ion-icon>
-        </a>
-        <a
-          class="footer-link"
-          href="https://upwork.com/freelancers/~015ad599ea7f9703cf"
-          target="_blank"
-        >
-          Upwork</a
-        >
-      </li>
-      <li>
-        <a
-          class="footer-link"
-          href="//instagram.com/dhimitri.coding/"
-          target="_blank"
-          ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-        ></a>
-        <a
-          class="footer-link"
-          href="//instagram.com/dhimitri.coding/"
-          target="_blank"
-          >dhimitri.coding</a
-        >
-      </li>
-      <li>
-        <a
-          class="footer-link"
-          href="https://github.com/dhimitriv"
-          target="_blank"
-          ><ion-icon class="social-icon" name="logo-github"></ion-icon
-        ></a>
-        <a
-          class="footer-link"
-          href="https://github.com/dhimitriv"
-          target="_blank"
-          >dhimitriv</a
-        >
-      </li>
-    </ul>
-    <p class="dfg">Site by: <a class="footer" href="#">Dhimitri Vincani</a></p>
-    <!-- <script src="script.js"></script> -->
+    <div class="footer">
+      <p class="footer-desc">Site by: <a class="footer-link" href="/">Dhimitri Vincani</a></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
