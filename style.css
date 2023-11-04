@@ -288,6 +288,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 2px;
   /* justify-content: space-between; */
 }
 
@@ -324,7 +325,6 @@
 .membership__perks {
   min-height: 150px;
 }
-
 .membership__card p {
   margin-bottom: 1rem;
 }
