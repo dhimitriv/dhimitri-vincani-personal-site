@@ -314,6 +314,13 @@
   background-size: cover;
 }
 
+.shop {
+  background: linear-gradient(to right, #00000086, #0000008c), url("shop.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
 .membership__perks {
   min-height: 150px;
 }
